@@ -16,6 +16,8 @@ Background: Woboinc develops software in Ruby & Javascript.  We primarily use Ru
 
 Objective: One of our clients wants to build a simple interface for college students to find textbooks for classes in which they are enrolled.  Using the [Amazon Product Advertising API](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html), we need you to build a simple search interface.  This interface should search for BOOKS only (not other products on Amazon).  That is, products suitable for a classroom.  Once searched, the results should be displayed in a simple and easy-to-read manner.
 
+*Alternative APIs*:  The Amazon API is really tricky to set up.  As alternatives, try the [Google Books API](https://developers.google.com/books/) or [New York Times Bestsellers List API](http://developer.nytimes.com/docs/best_sellers_api).
+
 Indvidual titles in search results should include the following information:
 - Book Title
 - Author Name
@@ -27,7 +29,7 @@ Indvidual titles in search results should include the following information:
 
 It is up to you, the developer, to focus on backend or front-end work.  If you focus on backend work, we will not critique your front-end development.  If you focus on front-end work, we will not critique your backend integrations.
 
-## Helpful Pages for the API
+## Helpful Pages for the Amazon API
 1. [Articles & Tutorials](http://aws.amazon.com/articles/Product%20Advertising%20API?_encoding=UTF8&jiveRedirect=1)
 2. [Documentation](http://aws.amazon.com/archives/Product%20Advertising%20API?_encoding=UTF8&jiveRedirect=1)
 3. [Developer Guide](http://docs.aws.amazon.com/AWSECommerceService/latest/DG/Welcome.html)
