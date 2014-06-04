@@ -1,4 +1,4 @@
-﻿
+﻿// global search index for pagination
 var index = 0;
 
 var searchObject = {
@@ -69,9 +69,10 @@ $("#searchForm").submit(function (event) {
             }
         });
     });
-    console.log(searchData);
 });
 
+
+// For Pager buttons
 $("#previousPage").click(function () {
     if (index > 0) {
         index -= 10;
@@ -86,12 +87,4 @@ $("#nextPage").click(function () {
 
 $("#searchBox").on('change keyup paste', function () {
     index = 0;
-});
-
-$(document).ready(function () {
-    $(".comment").shorten({
-        "showChars": 50,
-        "moreText": "See More",
-        "lessText": "Less",
-    });
 });
