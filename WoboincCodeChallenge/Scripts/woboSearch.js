@@ -45,6 +45,8 @@ $("#searchForm").submit(function (event) {
                 "infoLink": item.volumeInfo.infoLink
             });
         }
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        alert(jqXHR.responseText);
     }).done(function () {
         $.ajax({
             url: '/Home/SearchResults',
@@ -66,11 +68,13 @@ $("#searchForm").submit(function (event) {
                 });
                          
                 $("#searchResultsPanel").show();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.responseText);
             }
         });
     });
 });
-
 
 // For Pager buttons
 $("#previousPage").click(function () {
